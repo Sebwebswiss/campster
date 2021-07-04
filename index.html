@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campster Vijezba</title>
+
+    <!-- uvrstio sam sam style u html zbog lakseg pregleda!! u praksi napravim posebni fajl za css!! -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            color: rgb(61, 61, 61);
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .body {
+            background-color: rgb(158, 216, 255);
+
+            height: 100vh;
+            ;
+        }
+
+        .navigacija {
+            height: 45px;
+            background-color: rgb(95, 95, 95);
+
+
+
+        }
+
+        .navigacija a {
+            color: #ffffff;
+            text-transform: uppercase;
+            position: relative;
+            left: 50%;
+            top: 10px;
+            padding-right: 10px;
+
+        }
+
+        .navigacija a:hover {
+            color: #4ff8d3;
+
+
+        }
+
+
+
+        h1 {
+            font-size: 4em;
+            text-align: center;
+            margin: 40px 0;
+            text-transform: uppercase;
+
+        }
+
+        .naslov-2 {
+            margin-left: 55px;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        .slike {
+            max-width: 300px;
+        }
+
+        .prva-sekcija {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 150px;
+
+
+        }
+
+        .div-nav {
+            width: 35px;
+            height: 35px;
+            ;
+            /* background-color: rgb(255, 255, 255); */
+            float: right;
+            margin: 5px 20px;
+            display: none;
+        }
+
+        span {
+            width: 100%;
+            height: 5px;
+            background-color: rgb(241, 241, 241);
+            display: block;
+            content: '';
+            margin-bottom: 6px;
+            border-radius: 15%;
+
+        }
+
+        .div-nav :first-child {
+            margin-top: 4px;
+        }
+
+        .footer {
+
+            background-color: rgb(97, 97, 97);
+           display: flex;
+           flex-direction: column;
+          
+         
+          
+        }
+
+        .footer, .naslov-3, .kontakt, .link7,.link8 {
+            color: rgb(241, 241, 241);
+            padding: 0 5px;
+        }
+.naslov-3{
+
+ margin-bottom: 30px;
+}
+.kontakt{
+    margin-bottom: 30px;
+}
+
+.footer-link{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+margin-bottom: 15px;
+}
+
+        @media all and (max-width: 912px) {
+            .slike {
+                max-width: 250px;
+            }
+
+            @media all and (max-width: 866px) {
+                .navigacija a {
+                    display: none;
+                }
+
+                .div-nav {
+                    display: block;
+                }
+            }
+        }
+
+        @media all and (max-width: 768px) {
+            .prva-sekcija {
+                flex-direction: column;
+                text-align: center
+            }
+
+            .slike {
+                max-width: 300px;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="body" id="povratakNaVrhStranice">
+    <nav class="navigacija">
+        <div class="div-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a class="link1" href="https://www.google.com/">Google</a>
+        <a class="link2" href="https://www.yahoo.com/">Yahoo</a>
+        <a class="link3" href="https://www.facebook.com/">Facebook</a>
+        <a class="link4" href="https://www.instagram.com/">Instagram</a>
+        <a class="link5" href="#kontakt-sekcija">Kontakt</a>
+
+    </nav>
+    <h1 class="naslov-1">Blog za slike</h1>
+    <h2 class="naslov-2">galerija slika</h2>
+    <section class="prva-sekcija">
+        <div class="div-sekcija"><img
+                src="https://images.unsplash.com/photo-1617644404410-9cb3591f9268?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                alt="slika1" class="slike" id="slika1">
+            <p class="paragraf">Plitvicka jezera</p>
+        </div>
+        <div><img
+                src="https://images.unsplash.com/photo-1584030973062-d8febd347355?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                alt="slika2" class="slike">
+            <p class="paragraf">Plitvicka jezera</p>
+        </div>
+        <div><img
+                src="https://images.unsplash.com/photo-1595171250522-ae1c060c288d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                alt="slika3" class="slike">
+            <p class="paragraf">Plitvicka jezera</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <h3 class="naslov-3">Kontakt</h3>
+        <p class="kontakt" id="kontakt-sekcija"> Peric Marko <br> ZAGREB</p>
+        <div class="footer-link">
+            <a class="link7" href="#oNama">O nama</a>
+            <a class="link8" href="#povratakNaVrhStranice">Pocetak</a>
+        </div>
+    </footer>
+</body>
+
+</html>
